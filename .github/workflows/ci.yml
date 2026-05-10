@@ -30,8 +30,11 @@ jobs:
             - name: List directories
               run: ls
 
+            - name: Install dependencies
+              run: npm install
+
             - name: Run Tests
-              run: npm run test -- --run
+              run: npm run test 
 
             - name: Build Project
               run: npm run build
